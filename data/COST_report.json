@@ -2,13 +2,227 @@
   "ticker": "COST",
   "company_name": "COSTCO WHOLESALE CORP /NEW",
   "cik": "0000909832",
-  "units": "USD millions except ROE percent",
+  "units": "USD millions; ROE percent; other ratios dimensionless",
   "rows": [
-    {"fiscal_year_end": "2022-08-28", "values": {"revenue": 226954, "net_income": 5844, "operating_cash_flow": 7392, "capital_spending": 3891, "equity": 20642, "liabilities": 43519, "roe": 28.3, "liabilities_to_equity": 2.1, "owner_earnings": 3501}, "tags": {"revenue": "RevenueFromContractWithCustomerExcludingAssessedTax", "net_income": "NetIncomeLoss", "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities", "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment", "equity": "StockholdersEquity", "liabilities": "Liabilities", "roe": "NetIncomeLoss / StockholdersEquity", "liabilities_to_equity": "Liabilities / StockholdersEquity", "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"}, "raw_values": {"revenue": 226954000000, "net_income": 5844000000, "operating_cash_flow": 7392000000, "capital_spending": 3891000000, "equity": 20642000000, "liabilities": 43519000000, "roe": 28.31121015405484, "liabilities_to_equity": 2.1082743920162774, "owner_earnings": 3501000000}},
-    {"fiscal_year_end": "2023-09-03", "values": {"revenue": 242290, "net_income": 6292, "operating_cash_flow": 11068, "capital_spending": 4323, "equity": 25058, "liabilities": 43936, "roe": 25.1, "liabilities_to_equity": 1.8, "owner_earnings": 6745}, "tags": {"revenue": "RevenueFromContractWithCustomerExcludingAssessedTax", "net_income": "NetIncomeLoss", "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities", "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment", "equity": "StockholdersEquity", "liabilities": "Liabilities", "roe": "NetIncomeLoss / StockholdersEquity", "liabilities_to_equity": "Liabilities / StockholdersEquity", "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"}, "raw_values": {"revenue": 242290000000, "net_income": 6292000000, "operating_cash_flow": 11068000000, "capital_spending": 4323000000, "equity": 25058000000, "liabilities": 43936000000, "roe": 25.10974539069359, "liabilities_to_equity": 1.7533721765504031, "owner_earnings": 6745000000}},
-    {"fiscal_year_end": "2024-09-01", "values": {"revenue": 254453, "net_income": 7367, "operating_cash_flow": 11339, "capital_spending": 4710, "equity": 23622, "liabilities": 46209, "roe": 31.2, "liabilities_to_equity": 2.0, "owner_earnings": 6629}, "tags": {"revenue": "RevenueFromContractWithCustomerExcludingAssessedTax", "net_income": "NetIncomeLoss", "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities", "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment", "equity": "StockholdersEquity", "liabilities": "Liabilities", "roe": "NetIncomeLoss / StockholdersEquity", "liabilities_to_equity": "Liabilities / StockholdersEquity", "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"}, "raw_values": {"revenue": 254453000000, "net_income": 7367000000, "operating_cash_flow": 11339000000, "capital_spending": 4710000000, "equity": 23622000000, "liabilities": 46209000000, "roe": 31.18702904072475, "liabilities_to_equity": 1.9561849123698247, "owner_earnings": 6629000000}},
-    {"fiscal_year_end": "2025-08-31", "values": {"revenue": 275235, "net_income": 8099, "operating_cash_flow": 13335, "capital_spending": 5498, "equity": 29164, "liabilities": 47935, "roe": 27.8, "liabilities_to_equity": 1.6, "owner_earnings": 7837}, "tags": {"revenue": "RevenueFromContractWithCustomerExcludingAssessedTax", "net_income": "NetIncomeLoss", "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities", "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment", "equity": "StockholdersEquity", "liabilities": "Liabilities", "roe": "NetIncomeLoss / StockholdersEquity", "liabilities_to_equity": "Liabilities / StockholdersEquity", "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"}, "raw_values": {"revenue": 275235000000, "net_income": 8099000000, "operating_cash_flow": 13335000000, "capital_spending": 5498000000, "equity": 29164000000, "liabilities": 47935000000, "roe": 27.770539020710466, "liabilities_to_equity": 1.6436359895761898, "owner_earnings": 7837000000}},
-    {"fiscal_year_end": "2026-08-30", "values": {"revenue": 303154, "net_income": 9226, "operating_cash_flow": 15817, "capital_spending": 6435, "equity": 35803, "liabilities": 53242, "roe": 25.8, "liabilities_to_equity": 1.5, "owner_earnings": 9382}, "tags": {"revenue": "RevenueFromContractWithCustomerExcludingAssessedTax", "net_income": "NetIncomeLoss", "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities", "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment", "equity": "StockholdersEquity", "liabilities": "Liabilities", "roe": "NetIncomeLoss / StockholdersEquity", "liabilities_to_equity": "Liabilities / StockholdersEquity", "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"}, "raw_values": {"revenue": 303154000000, "net_income": 9226000000, "operating_cash_flow": 15817000000, "capital_spending": 6435000000, "equity": 35803000000, "liabilities": 53242000000, "roe": 25.768790324833116, "liabilities_to_equity": 1.4870820880931765, "owner_earnings": 9382000000}}
+    {
+      "fiscal_year_end": "2022-08-28",
+      "values": {
+        "revenue": 226954,
+        "net_income": 5844,
+        "operating_cash_flow": 7392,
+        "capital_spending": 3891,
+        "equity": 20642,
+        "liabilities": 43519,
+        "current_assets": 32696,
+        "current_liabilities": 31998,
+        "roe": 28.3,
+        "liabilities_to_equity": 2.11,
+        "owner_earnings": 3501,
+        "current_ratio": 1.02
+      },
+      "tags": {
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"
+      },
+      "raw_values": {
+        "revenue": 226954000000,
+        "net_income": 5844000000,
+        "operating_cash_flow": 7392000000,
+        "capital_spending": 3891000000,
+        "equity": 20642000000,
+        "liabilities": 43519000000,
+        "current_assets": 32696000000,
+        "current_liabilities": 31998000000,
+        "roe": 28.31121015405484,
+        "liabilities_to_equity": 2.1082743920162774,
+        "owner_earnings": 3501000000
+      }
+    },
+    {
+      "fiscal_year_end": "2023-09-03",
+      "values": {
+        "revenue": 242290,
+        "net_income": 6292,
+        "operating_cash_flow": 11068,
+        "capital_spending": 4323,
+        "equity": 25058,
+        "liabilities": 43936,
+        "current_assets": 35879,
+        "current_liabilities": 33583,
+        "roe": 25.1,
+        "liabilities_to_equity": 1.75,
+        "owner_earnings": 6745,
+        "current_ratio": 1.07
+      },
+      "tags": {
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"
+      },
+      "raw_values": {
+        "revenue": 242290000000,
+        "net_income": 6292000000,
+        "operating_cash_flow": 11068000000,
+        "capital_spending": 4323000000,
+        "equity": 25058000000,
+        "liabilities": 43936000000,
+        "current_assets": 35879000000,
+        "current_liabilities": 33583000000,
+        "roe": 25.10974539069359,
+        "liabilities_to_equity": 1.7533721765504031,
+        "owner_earnings": 6745000000
+      }
+    },
+    {
+      "fiscal_year_end": "2024-09-01",
+      "values": {
+        "revenue": 254453,
+        "net_income": 7367,
+        "operating_cash_flow": 11339,
+        "capital_spending": 4710,
+        "equity": 23622,
+        "liabilities": 46209,
+        "current_assets": 34246,
+        "current_liabilities": 35464,
+        "roe": 31.2,
+        "liabilities_to_equity": 1.96,
+        "owner_earnings": 6629,
+        "current_ratio": 0.97
+      },
+      "tags": {
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"
+      },
+      "raw_values": {
+        "revenue": 254453000000,
+        "net_income": 7367000000,
+        "operating_cash_flow": 11339000000,
+        "capital_spending": 4710000000,
+        "equity": 23622000000,
+        "liabilities": 46209000000,
+        "current_assets": 34246000000,
+        "current_liabilities": 35464000000,
+        "roe": 31.18702904072475,
+        "liabilities_to_equity": 1.9561849123698247,
+        "owner_earnings": 6629000000
+      }
+    },
+    {
+      "fiscal_year_end": "2025-08-31",
+      "values": {
+        "revenue": 275235,
+        "net_income": 8099,
+        "operating_cash_flow": 13335,
+        "capital_spending": 5498,
+        "equity": 29164,
+        "liabilities": 47935,
+        "current_assets": 38380,
+        "current_liabilities": 37108,
+        "roe": 27.8,
+        "liabilities_to_equity": 1.64,
+        "owner_earnings": 7837,
+        "current_ratio": 1.03
+      },
+      "tags": {
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"
+      },
+      "raw_values": {
+        "revenue": 275235000000,
+        "net_income": 8099000000,
+        "operating_cash_flow": 13335000000,
+        "capital_spending": 5498000000,
+        "equity": 29164000000,
+        "liabilities": 47935000000,
+        "current_assets": 38380000000,
+        "current_liabilities": 37108000000,
+        "roe": 27.770539020710466,
+        "liabilities_to_equity": 1.6436359895761898,
+        "owner_earnings": 7837000000
+      }
+    },
+    {
+      "fiscal_year_end": "2026-08-30",
+      "values": {
+        "revenue": 303154,
+        "net_income": 9226,
+        "operating_cash_flow": 15817,
+        "capital_spending": 6435,
+        "equity": 35803,
+        "liabilities": 53242,
+        "current_assets": 46582,
+        "current_liabilities": 43952,
+        "roe": 25.8,
+        "liabilities_to_equity": 1.49,
+        "owner_earnings": 9382,
+        "current_ratio": 1.06
+      },
+      "tags": {
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquirePropertyPlantAndEquipment"
+      },
+      "raw_values": {
+        "revenue": 303154000000,
+        "net_income": 9226000000,
+        "operating_cash_flow": 15817000000,
+        "capital_spending": 6435000000,
+        "equity": 35803000000,
+        "liabilities": 53242000000,
+        "current_assets": 46582000000,
+        "current_liabilities": 43952000000,
+        "roe": 25.768790324833116,
+        "liabilities_to_equity": 1.4870820880931765,
+        "owner_earnings": 9382000000
+      }
+    }
   ],
-  "checks": {"ROE of 15% or more every year": "pass", "Owner earnings positive every year": "pass", "Owner earnings grew, first year to last": "pass"}
+  "checks": {
+    "ROE of 15% or more every year": "pass",
+    "Owner earnings positive every year": "pass",
+    "Owner earnings grew, first year to last": "pass"
+  }
 }

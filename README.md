@@ -30,3 +30,26 @@ only when you request fresh SEC data; it does not save it.
   was not printed by the script.
 
 Your personal trust decision and reflection are intentionally not filled in.
+
+
+## Lab 19 — Legend Panel
+
+The original Buffett app remains, with a three-investor panel added below it.
+Select COST or NVDA from Saved company; the saved SEC runs need no email.
+Use Graham's threshold control to compare 2.0 with 1.0, and edit each memo to
+probe the cross-memo number flag. Financial checks use unrounded source amounts.
+
+```sh
+python -m pip install -r requirements.txt
+python panel.py COST --email YOUR_EMAIL
+python panel.py NVDA --email YOUR_EMAIL
+python -m unittest discover -s tests -v
+python -m streamlit run app.py
+```
+
+`panel.py` prints the evidence, checks, verdicts, memos and per-memo number flags,
+and saves reproducible reports and memos. The two added project skills are under
+`.agents/skills/graham-edgar` and `.agents/skills/burry-edgar`; each credits its
+FAskills source. These simplified screens do not claim to reproduce the full
+investors' strategies. See `docs/lab19-checkout.md` for results, discussion drafts,
+the proposed conditional decision and activities to complete yourself.

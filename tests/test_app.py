@@ -9,10 +9,10 @@ class AppTests(unittest.TestCase):
     def test_cost_dashboard_renders_and_flags_probe(self) -> None:
         app = AppTest.from_file(Path(__file__).resolve().parents[1] / "app.py").run(timeout=15)
         self.assertFalse(app.exception)
-        self.assertEqual(app.title[0].value, "Buffett-style business review")
-        self.assertEqual(len(app.dataframe), 1)
-        self.assertEqual(len(app.text_area), 1)
-        self.assertTrue(any("I partly trust the verdict on COST" in item.value for item in app.markdown))
+        self.assertEqual(app.title[0].value, "Legend Panel — Buffett, Graham and Burry")
+        self.assertEqual(len(app.dataframe), 2)
+        self.assertEqual(len(app.text_area), 4)
+        self.assertTrue(any("Current ratio" in str(item.value) for item in app.table))
 
         app.text_area[0].set_value("ROE was 40.0%.").run(timeout=15)
         self.assertFalse(app.exception)
@@ -23,6 +23,7 @@ class AppTests(unittest.TestCase):
         report = json.loads(Path("data/JPM_report.json").read_text(encoding="utf-8"))
         app = AppTest.from_file(Path(__file__).resolve().parents[1] / "app.py")
         app.session_state["report"] = report
+        app.session_state["saved_ticker"] = "COST"
         app.run(timeout=15)
         self.assertFalse(app.exception)
         self.assertFalse(app.warning)

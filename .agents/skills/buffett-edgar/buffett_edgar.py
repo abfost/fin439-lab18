@@ -35,6 +35,8 @@ FLOW_TAGS = {
 INSTANT_TAGS = {
     "equity": ["StockholdersEquity"],
     "liabilities": ["Liabilities"],
+    "current_assets": ["AssetsCurrent"],
+    "current_liabilities": ["LiabilitiesCurrent"],
 }
 
 DISPLAY_NAMES = {
@@ -229,7 +231,7 @@ def build_rows(facts: dict[str, Any]) -> list[dict[str, Any]]:
         # Rounded ratios are for display only.
         for name in ("roe", "liabilities_to_equity"):
             row["values"][name] = (
-                round(raw[name], 1)
+                round(raw[name], 1 if name == "roe" else 2)
                 if raw[name] is not None
                 else None
             )

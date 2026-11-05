@@ -11,12 +11,13 @@ import pandas as pd
 import streamlit as st
 
 from app_support import unsupported_memo_numbers
+from panel import build_panel
 
 ROOT = Path(__file__).parent
 SCRIPT = ROOT / ".agents" / "skills" / "buffett-edgar" / "buffett_edgar.py"
 
 st.set_page_config(page_title="FIN439 Lab 18", page_icon=":material/account_balance:", layout="wide")
-st.title("Buffett-style business review")
+st.title("Legend Panel — Buffett, Graham and Burry")
 st.caption("data from SEC EDGAR; built with AI help, a learning demonstration, not investment advice.")
 
 
@@ -77,6 +78,11 @@ with st.sidebar:
         email = st.text_input("Email for the SEC User-Agent", type="password")
         submitted = st.form_submit_button("Fetch SEC facts", icon=":material/download:", width="stretch")
     st.caption("The email is used only in the request header and is not saved by this app.")
+
+saved_ticker = st.sidebar.selectbox("Saved company", ["COST", "NVDA", "JPM"])
+if st.session_state.get("saved_ticker") != saved_ticker:
+    st.session_state.saved_ticker = saved_ticker
+    st.session_state.report = saved_report(saved_ticker)
 
 if "report" not in st.session_state:
     st.session_state.report = saved_report("COST")
@@ -168,3 +174,25 @@ if memo_path.exists():
             st.success("Every numeric value in this memo appears in the script output.")
 else:
     st.info("No saved memo exists for this ticker yet. Use the Buffett EDGAR skill after reviewing this script output.")
+
+
+st.header("Three-investor panel")
+threshold = st.select_slider("Graham current-ratio threshold", options=[1.0, 2.0], value=2.0)
+panel = build_panel(report, threshold)
+evidence = {k:v for k,v in panel.items() if k != "memos"}
+st.dataframe(pd.DataFrame(panel["facts"]), hide_index=True)
+st.table(pd.DataFrame([{"Investor": investor, "Check": label, "Result": status}
+    for investor, checks in panel["checks"].items() for label,status in checks.items()]))
+for column, investor in zip(st.columns(3), panel["memos"]):
+    with column:
+        st.subheader(investor)
+        st.write("Verdict: " + panel["verdicts"][investor])
+        memo = st.text_area("Memo and number probe", value=panel["memos"][investor],
+            height=420, key=f"panel_{report['ticker']}_{investor}_{threshold}")
+        flags = unsupported_memo_numbers(memo, evidence)
+        if flags:
+            st.warning("Unprinted numbers: " + ", ".join(flags))
+        else:
+            st.success("All memo numbers occur in printed evidence.")
+with st.expander("Printed evidence used by all memo number checks"):
+    st.json(evidence)

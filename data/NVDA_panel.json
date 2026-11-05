@@ -1,0 +1,113 @@
+{
+  "ticker": "NVDA",
+  "company_name": "NVIDIA CORP",
+  "threshold": 2.0,
+  "facts": [
+    {
+      "FY end": "2022-01-30",
+      "revenue": 26914,
+      "net_income": 9752,
+      "operating_cash_flow": 9108,
+      "capital_spending": 976,
+      "equity": 26612,
+      "liabilities": 17575,
+      "current_assets": 28829,
+      "current_liabilities": 4335,
+      "roe": 36.6,
+      "liabilities_to_equity": 0.66,
+      "owner_earnings": 8132,
+      "current_ratio": 6.65
+    },
+    {
+      "FY end": "2023-01-29",
+      "revenue": 26974,
+      "net_income": 4368,
+      "operating_cash_flow": 5641,
+      "capital_spending": 1833,
+      "equity": 22101,
+      "liabilities": 19081,
+      "current_assets": 23073,
+      "current_liabilities": 6563,
+      "roe": 19.8,
+      "liabilities_to_equity": 0.86,
+      "owner_earnings": 3808,
+      "current_ratio": 3.52
+    },
+    {
+      "FY end": "2024-01-28",
+      "revenue": 60922,
+      "net_income": 29760,
+      "operating_cash_flow": 28090,
+      "capital_spending": 1069,
+      "equity": 42978,
+      "liabilities": 22750,
+      "current_assets": 44345,
+      "current_liabilities": 10631,
+      "roe": 69.2,
+      "liabilities_to_equity": 0.53,
+      "owner_earnings": 27021,
+      "current_ratio": 4.17
+    },
+    {
+      "FY end": "2025-01-26",
+      "revenue": 130497,
+      "net_income": 72880,
+      "operating_cash_flow": 64089,
+      "capital_spending": 3236,
+      "equity": 79327,
+      "liabilities": 32274,
+      "current_assets": 80126,
+      "current_liabilities": 18047,
+      "roe": 91.9,
+      "liabilities_to_equity": 0.41,
+      "owner_earnings": 60853,
+      "current_ratio": 4.44
+    },
+    {
+      "FY end": "2026-01-25",
+      "revenue": 215938,
+      "net_income": 120067,
+      "operating_cash_flow": 102718,
+      "capital_spending": 6042,
+      "equity": 157293,
+      "liabilities": 49510,
+      "current_assets": 125605,
+      "current_liabilities": 32163,
+      "roe": 76.3,
+      "liabilities_to_equity": 0.31,
+      "owner_earnings": 96676,
+      "current_ratio": 3.91
+    }
+  ],
+  "checks": {
+    "Buffett": {
+      "ROE of 15% or more every year": "pass",
+      "Owner earnings positive every year": "pass",
+      "Owner earnings grew, first year to last": "pass"
+    },
+    "Graham": {
+      "Current ratio at least 2.0, latest year": "pass",
+      "Net income positive every year": "pass",
+      "Net income grew, first year to last": "pass"
+    },
+    "Burry": {
+      "Operating cash flow at least net income every year": "fail",
+      "Liabilities no more than twice equity, latest year": "pass"
+    }
+  },
+  "verdicts": {
+    "Buffett": "passes screen",
+    "Graham": "passes screen",
+    "Burry": "watch it"
+  },
+  "memos": {
+    "Buffett": "NVDA \u2014 Buffett: passes screen.\n\nROE of 15% or more every year: pass.\n\nOwner earnings positive every year: pass.\n\nOwner earnings grew, first year to last: pass.\n\nFocus: profitability and cash remaining after capital spending.\n\nThis simplified business screen does not establish a fair purchase price or justify an allocation. Missing inputs remain not known.",
+    "Graham": "NVDA \u2014 Graham: passes screen.\n\nCurrent ratio at least 2.0, latest year: pass.\n\nNet income positive every year: pass.\n\nNet income grew, first year to last: pass.\n\nLatest current ratio: 3.91.\n\nThreshold retained: 2.0; keep the assignment\u2019s conservative liquidity requirement.\n\nFocus: liquidity and earnings stability.\n\nThis simplified business screen does not establish a fair purchase price or justify an allocation. Missing inputs remain not known.",
+    "Burry": "NVDA \u2014 Burry: watch it.\n\nOperating cash flow at least net income every year: fail.\n\nLiabilities no more than twice equity, latest year: pass.\n\nLatest liabilities / equity: 0.31.\n\nFocus: cash backing earnings and balance-sheet obligations.\n\nThis simplified business screen does not establish a fair purchase price or justify an allocation. Missing inputs remain not known."
+  },
+  "number_flags": {
+    "Buffett": [],
+    "Graham": [],
+    "Burry": []
+  }
+}

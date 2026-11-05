@@ -1,0 +1,228 @@
+{
+  "ticker": "NVDA",
+  "company_name": "NVIDIA CORP",
+  "cik": "0001045810",
+  "units": "USD millions; ROE percent; other ratios dimensionless",
+  "rows": [
+    {
+      "fiscal_year_end": "2022-01-30",
+      "values": {
+        "revenue": 26914,
+        "net_income": 9752,
+        "operating_cash_flow": 9108,
+        "capital_spending": 976,
+        "equity": 26612,
+        "liabilities": 17575,
+        "current_assets": 28829,
+        "current_liabilities": 4335,
+        "roe": 36.6,
+        "liabilities_to_equity": 0.66,
+        "owner_earnings": 8132,
+        "current_ratio": 6.65
+      },
+      "tags": {
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquireProductiveAssets",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquireProductiveAssets"
+      },
+      "raw_values": {
+        "revenue": 26914000000,
+        "net_income": 9752000000,
+        "operating_cash_flow": 9108000000,
+        "capital_spending": 976000000,
+        "equity": 26612000000,
+        "liabilities": 17575000000,
+        "current_assets": 28829000000,
+        "current_liabilities": 4335000000,
+        "roe": 36.64512250112731,
+        "liabilities_to_equity": 0.6604163535247257,
+        "owner_earnings": 8132000000
+      }
+    },
+    {
+      "fiscal_year_end": "2023-01-29",
+      "values": {
+        "revenue": 26974,
+        "net_income": 4368,
+        "operating_cash_flow": 5641,
+        "capital_spending": 1833,
+        "equity": 22101,
+        "liabilities": 19081,
+        "current_assets": 23073,
+        "current_liabilities": 6563,
+        "roe": 19.8,
+        "liabilities_to_equity": 0.86,
+        "owner_earnings": 3808,
+        "current_ratio": 3.52
+      },
+      "tags": {
+        "revenue": "Revenues",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquireProductiveAssets",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquireProductiveAssets"
+      },
+      "raw_values": {
+        "revenue": 26974000000,
+        "net_income": 4368000000,
+        "operating_cash_flow": 5641000000,
+        "capital_spending": 1833000000,
+        "equity": 22101000000,
+        "liabilities": 19081000000,
+        "current_assets": 23073000000,
+        "current_liabilities": 6563000000,
+        "roe": 19.763811592235644,
+        "liabilities_to_equity": 0.8633545993393964,
+        "owner_earnings": 3808000000
+      }
+    },
+    {
+      "fiscal_year_end": "2024-01-28",
+      "values": {
+        "revenue": 60922,
+        "net_income": 29760,
+        "operating_cash_flow": 28090,
+        "capital_spending": 1069,
+        "equity": 42978,
+        "liabilities": 22750,
+        "current_assets": 44345,
+        "current_liabilities": 10631,
+        "roe": 69.2,
+        "liabilities_to_equity": 0.53,
+        "owner_earnings": 27021,
+        "current_ratio": 4.17
+      },
+      "tags": {
+        "revenue": "Revenues",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquireProductiveAssets",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquireProductiveAssets"
+      },
+      "raw_values": {
+        "revenue": 60922000000,
+        "net_income": 29760000000,
+        "operating_cash_flow": 28090000000,
+        "capital_spending": 1069000000,
+        "equity": 42978000000,
+        "liabilities": 22750000000,
+        "current_assets": 44345000000,
+        "current_liabilities": 10631000000,
+        "roe": 69.24472986178975,
+        "liabilities_to_equity": 0.529340592861464,
+        "owner_earnings": 27021000000
+      }
+    },
+    {
+      "fiscal_year_end": "2025-01-26",
+      "values": {
+        "revenue": 130497,
+        "net_income": 72880,
+        "operating_cash_flow": 64089,
+        "capital_spending": 3236,
+        "equity": 79327,
+        "liabilities": 32274,
+        "current_assets": 80126,
+        "current_liabilities": 18047,
+        "roe": 91.9,
+        "liabilities_to_equity": 0.41,
+        "owner_earnings": 60853,
+        "current_ratio": 4.44
+      },
+      "tags": {
+        "revenue": "Revenues",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquireProductiveAssets",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquireProductiveAssets"
+      },
+      "raw_values": {
+        "revenue": 130497000000,
+        "net_income": 72880000000,
+        "operating_cash_flow": 64089000000,
+        "capital_spending": 3236000000,
+        "equity": 79327000000,
+        "liabilities": 32274000000,
+        "current_assets": 80126000000,
+        "current_liabilities": 18047000000,
+        "roe": 91.87288060811578,
+        "liabilities_to_equity": 0.4068476054811098,
+        "owner_earnings": 60853000000
+      }
+    },
+    {
+      "fiscal_year_end": "2026-01-25",
+      "values": {
+        "revenue": 215938,
+        "net_income": 120067,
+        "operating_cash_flow": 102718,
+        "capital_spending": 6042,
+        "equity": 157293,
+        "liabilities": 49510,
+        "current_assets": 125605,
+        "current_liabilities": 32163,
+        "roe": 76.3,
+        "liabilities_to_equity": 0.31,
+        "owner_earnings": 96676,
+        "current_ratio": 3.91
+      },
+      "tags": {
+        "revenue": "Revenues",
+        "net_income": "NetIncomeLoss",
+        "operating_cash_flow": "NetCashProvidedByUsedInOperatingActivities",
+        "capital_spending": "PaymentsToAcquireProductiveAssets",
+        "equity": "StockholdersEquity",
+        "liabilities": "Liabilities",
+        "current_assets": "AssetsCurrent",
+        "current_liabilities": "LiabilitiesCurrent",
+        "roe": "NetIncomeLoss / StockholdersEquity",
+        "liabilities_to_equity": "Liabilities / StockholdersEquity",
+        "owner_earnings": "NetCashProvidedByUsedInOperatingActivities - PaymentsToAcquireProductiveAssets"
+      },
+      "raw_values": {
+        "revenue": 215938000000,
+        "net_income": 120067000000,
+        "operating_cash_flow": 102718000000,
+        "capital_spending": 6042000000,
+        "equity": 157293000000,
+        "liabilities": 49510000000,
+        "current_assets": 125605000000,
+        "current_liabilities": 32163000000,
+        "roe": 76.33333969089533,
+        "liabilities_to_equity": 0.3147628947251308,
+        "owner_earnings": 96676000000
+      }
+    }
+  ],
+  "checks": {
+    "ROE of 15% or more every year": "pass",
+    "Owner earnings positive every year": "pass",
+    "Owner earnings grew, first year to last": "pass"
+  }
+}

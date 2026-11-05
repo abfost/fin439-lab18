@@ -1,0 +1,14 @@
+{
+  "COST": {
+    "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json",
+    "retrieved_date": "2026-11-05",
+    "sha256": "b675ced201b27ede2b0d26ca6fd873befe96a1afa9679339a2d0b964187dcdff",
+    "reproduce": "python panel.py COST --facts data/raw/COST_companyfacts.json"
+  },
+  "NVDA": {
+    "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+    "retrieved_date": "2026-11-05",
+    "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+    "reproduce": "python panel.py NVDA --facts data/raw/NVDA_companyfacts.json"
+  }
+}
