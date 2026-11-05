@@ -22,8 +22,6 @@ Audited November 5, 2026. Technical implementation verified; individual classroo
 | Conditional trust decision | Draft provided for review | Checkout notes propose research-only use conditioned on investigating cash-conversion failures, valuation, gaps and mandate limits before allocation. You must review/adopt or revise this as your decision. |
 | Explain the panel and reflect | Written explanation included | Checkout notes explain shared facts/different rules, agreement/split and threshold sensitivity. Actual partner explanations remain your activity. |
 | Graham code explanation | Written explanation included | Checkout notes explain row sorting, raw inputs, current ratio, annual income tests, first-to-last growth, missing inputs and unrounded comparisons in student language. AI assistance is permitted per the updated instruction you reported; the actual partner exchange is not claimed as completed. |
-| Initial no-screen explanation and swaps | Must complete yourself | Explain one Graham/Burry difference from Buffett using the persona pages, then swap. |
-| Open Lab 19 quiz and submit individually | Must complete yourself | Brightspace → Quizzes → Lab 19. Use the GitHub links below. |
 
 ## Reproduction
 
