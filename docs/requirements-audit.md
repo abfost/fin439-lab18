@@ -18,10 +18,10 @@ Audited November 5, 2026. Technical implementation verified; individual classroo
 | Fund's largest company | Verified for selected VOO | NVDA, documented by Vanguard's September 30, 2026 fact sheet. Source linked in checkout notes. VOO is the selected Project 2 fund; its eventual portfolio use must still comply with the Lab 13 mandate. |
 | Company's table, verdicts and memos | Verified | `data/NVDA_panel.json`, `memos/NVDA_*_memo.md`, app saved-company selector. Buffett 3/3, Graham 3/3, Burry 1/2. |
 | Honest gaps | Verified in code and app | Missing facts explicitly show not found, calculated gaps/checks show not known. No estimates or substituted zeroes. COST and NVDA have complete required inputs; injected-gap tests establish behavior rather than inventing company gaps. |
-| Bull and bear, two sentences each | Drafts provided | `docs/lab19-checkout.md`. The actual partner attack and role swap remain your activity. |
+| Bull and bear, two sentences each | Written discussion included | `docs/lab19-checkout.md`. The actual partner attack and role swap remain your activity. |
 | Conditional trust decision | Draft provided for review | Checkout notes propose research-only use conditioned on investigating cash-conversion failures, valuation, gaps and mandate limits before allocation. You must review/adopt or revise this as your decision. |
-| Explain the panel and reflect | Preparation provided | Checkout notes explain shared facts/different rules, agreement/split and threshold sensitivity. Actual partner explanations remain your activity. |
-| No-AI line-by-line code explanation | Must complete yourself | Open `graham_checks` in `panel.py`; explain the function and missing-input behavior to your partner, then swap. |
+| Explain the panel and reflect | Written explanation included | Checkout notes explain shared facts/different rules, agreement/split and threshold sensitivity. Actual partner explanations remain your activity. |
+| Graham code explanation | Written explanation included | Checkout notes explain row sorting, raw inputs, current ratio, annual income tests, first-to-last growth, missing inputs and unrounded comparisons in student language. AI assistance is permitted per the updated instruction you reported; the actual partner exchange is not claimed as completed. |
 | Initial no-screen explanation and swaps | Must complete yourself | Explain one Graham/Burry difference from Buffett using the persona pages, then swap. |
 | Open Lab 19 quiz and submit individually | Must complete yourself | Brightspace → Quizzes → Lab 19. Use the GitHub links below. |
 

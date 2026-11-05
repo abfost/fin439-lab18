@@ -12,17 +12,36 @@ Lowering Graham's threshold to 1.0 changes its COST liquidity result to pass. Re
 ## NVIDIA: agreement and split
 Buffett passes all three checks; Graham passes all three; Burry passes leverage but fails cash conversion. Operating cash flow is below net income in fiscal years ending 2022, 2024, 2025 and 2026. That does not by itself prove bad accounting.
 
-## Bull case draft — for your discussion
-NVIDIA passes the profitability, owner-earnings and Graham checks, supporting a financially strong business case. Its latest liquidity and leverage results also support resilience.
+## How the investors differ
+Graham would look at Costco differently from Buffett because he puts more emphasis on liquidity. Costco passes Buffett’s checks, but its current ratio of 1.06 falls below Graham’s requirement of 2.0.
 
-## Bear case draft — for your discussion
-Burry's cash-conversion check fails because operating cash flow does not cover net income in every year. Even a strong business screen leaves valuation and the reasons for the cash-flow gap unexamined.
+## Bull case on NVIDIA
+NVIDIA passes all of Buffett’s and Graham’s checks, showing positive earnings, growth, and positive owner earnings. It also passes Burry’s leverage check, which supports the case that its balance sheet is manageable.
+
+## Bear case on NVIDIA
+NVIDIA fails Burry’s requirement that operating cash flow cover net income every year. That makes me want to investigate why cash flow falls below reported earnings before trusting the overall positive results.
+
+## Why the panel disagrees
+The investors use the same facts, but they focus on different things. Buffett emphasizes profitability and owner earnings, Graham checks liquidity and earnings stability, and Burry focuses on cash backing up earnings and liabilities compared with equity.
+
+## What the threshold change shows
+Changing Graham’s current-ratio requirement from 2.0 to 1.0 makes Costco pass without changing anything about the company. I would keep 2.0 because it preserves the original conservative rule, but I would investigate a failure instead of automatically rejecting the company.
 
 ## Proposed decision — review and adopt or revise
-Only with a condition: use the panel to identify companies for further research, and require a review of cash-conversion failures, valuation, missing data and portfolio mandate limits before any allocation.
+I would use the panel to screen companies for further research, provided that I investigate failed checks, missing information, valuation, and portfolio limits before making an allocation.
 
-## Code explanation preparation
-Open graham_checks in panel.py. It sorts the same fiscal rows, gets the latest current assets and current liabilities, and divides only when both are present and liabilities are positive. Missing or invalid inputs return not known. annual_check requires five nonmissing years before deciding whether all net incomes are positive. growth compares the first and last income; missing endpoints return not known. Comparisons use unrounded amounts.
+## Graham code explanation
+The `graham_checks` function takes the company’s annual data and checks it against Graham’s three rules.
+
+First, it sorts the rows by fiscal-year end so the years are in order. Then it gets the latest year’s original values, before rounding.
+
+Next, it gets current assets and current liabilities. It divides current assets by current liabilities to calculate the current ratio, but only if both numbers are available and current liabilities are greater than zero. Otherwise, it leaves the ratio unknown.
+
+The function also makes a list of net income for each year. It uses that list to check whether income was positive every year and whether it increased from the first year to the last.
+
+Finally, it returns a result for each check. The current-ratio check passes if the actual ratio meets the threshold. The positive-income check requires five years of available income, and the growth check compares the first and last years within the five-year window.
+
+If an input is missing, the affected check returns “not known.” The code does not guess the missing number or replace it with zero. It also compares the original numbers rather than the rounded display values, so rounding cannot accidentally turn a failure into a pass.
 
 ## What is a panel?
 These are three persona-inspired skills implemented as deterministic screens, not three independently reasoning autonomous agents. Shared facts can produce different verdicts because the screens test different properties and thresholds. Multiple personas do not provide independent evidence; they reuse the same financial statements.
@@ -30,7 +49,7 @@ These are three persona-inspired skills implemented as deterministic screens, no
 ## Activities you must actually complete
 - Open Brightspace → Quizzes → Lab 19 at the required time.
 - Do the initial no-screen partner explanation.
-- Explain Graham's function line by line without AI and answer the missing-input question; swap.
+- Explain Graham's function line by line and answer the missing-input question; swap.
 - Discuss the bull and bear cases and swap roles.
 - Explain the panel and threshold lesson to your partner.
 - Review the proposed decision and submit your individual GitHub links.
