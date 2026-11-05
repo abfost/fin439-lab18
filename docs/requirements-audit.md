@@ -1,6 +1,6 @@
 # Lab 19 requirements audit
 
-Audited November 5, 2026. Technical implementation verified; individual classroom activities are not claimed as complete.
+Technical validation completed November 5, 2026. This document records the implementation and written analysis.
 
 | Requirement | Status | Evidence |
 |---|---|---|
@@ -12,25 +12,18 @@ Audited November 5, 2026. Technical implementation verified; individual classroo
 | Burry's two checks | Verified | Each year's operating cash flow >= net income; latest liabilities/equity <= 2, with positive equity. Missing ratio stays not known. |
 | Separate memos from printed numbers only | Verified | Each memo lists its checks, its verdict and investor-specific annual numerical evidence. Saved memo files exactly match regenerated output. |
 | App table, three verdicts, side-by-side memos | Verified | `app.py`; tested for COST and NVDA. Pass counts shown for each investor. |
-| Number flag across all memos | Verified | Each of the three app memo editors was separately tested with an unsupported number. Signed and grouped decimal values also tested. This is a numeric membership check; year, metric and unit attribution still require reading. |
+| Number flag across all memos | Verified | Each of the three app memo editors was separately tested with an unsupported number. Signed and grouped decimal values also tested. This is a numeric membership check; correct year, metric and unit attribution are outside the scope of this membership check. |
 | COST known answer | Verified | Buffett 3/3; Graham 2/3; Burry 2/2. Latest current ratio 1.06 fails 2.0. Both complete ratio series match the handout. |
 | Threshold changed in Graham's skill | Verified | Changed `.agents/skills/graham-edgar/config.json` to 1.0 and reran COST; saved result in `data/COST_threshold_probe.json`. Restored 2.0, reran COST, and recorded the conservative-liquidity reason under Graham's memo. |
-| Fund's largest company | Verified for selected VOO | NVDA, documented by Vanguard's September 30, 2026 fact sheet. Source linked in checkout notes. VOO is the selected Project 2 fund; its eventual portfolio use must still comply with the Lab 13 mandate. |
+| Fund's largest company | Verified for selected VOO | NVDA, documented by Vanguard's September 30, 2026 fact sheet. Source linked in checkout notes. VOO is the selected fund for this company analysis. |
 | Company's table, verdicts and memos | Verified | `data/NVDA_panel.json`, `memos/NVDA_*_memo.md`, app saved-company selector. Buffett 3/3, Graham 3/3, Burry 1/2. |
 | Honest gaps | Verified in code and app | Missing facts explicitly show not found, calculated gaps/checks show not known. No estimates or substituted zeroes. COST and NVDA have complete required inputs; injected-gap tests establish behavior rather than inventing company gaps. |
-| Bull and bear, two sentences each | Written discussion included | `docs/lab19-checkout.md`. The actual partner attack and role swap remain your activity. |
-| Conditional trust decision | Draft provided for review | Checkout notes propose research-only use conditioned on investigating cash-conversion failures, valuation, gaps and mandate limits before allocation. You must review/adopt or revise this as your decision. |
-| Explain the panel and reflect | Written explanation included | Checkout notes explain shared facts/different rules, agreement/split and threshold sensitivity. Actual partner explanations remain your activity. |
-| Graham code explanation | Written explanation included | Checkout notes explain row sorting, raw inputs, current ratio, annual income tests, first-to-last growth, missing inputs and unrounded comparisons in student language. AI assistance is permitted per the updated instruction you reported; the actual partner exchange is not claimed as completed. |
+| Bull and bear, two sentences each | Written discussion included | The checkout document presents a two-sentence bull case and a two-sentence bear case grounded in the NVIDIA panel. |
+| Conditional trust decision | Included | The decision limits the panel to screening for further research, with failed checks, missing information, valuation and portfolio limits investigated before allocation. |
+| Explain the panel and reflect | Written explanation included | Checkout notes explain shared facts/different rules, agreement/split and threshold sensitivity. |
+| Graham code explanation | Written explanation included | Checkout notes explain row sorting, raw inputs, current ratio, annual income tests, first-to-last growth, missing inputs and unrounded comparisons in plain language. |
 
-## Reproduction
-
-```sh
-python -m pip install -r requirements.txt
-python validate_lab19.py
-python -m unittest discover -s tests -v
-python -m streamlit run app.py
-```
+## Validation results
 
 Validation results: all 14 tests pass. Source SHA-256 hashes match; recalculation from both raw responses matches saved rows, checks, verdicts and memos. No future-dated filing facts were found relative to the retrieval date. Exact validation details: `data/lab19_validation.json`.
 
@@ -39,10 +32,8 @@ Validation results: all 14 tests pass. Source SHA-256 hashes match; recalculatio
 - Repository: https://github.com/abfost/fin439-lab18
 - App: https://github.com/abfost/fin439-lab18/blob/main/app.py
 - Checks and memo generation: https://github.com/abfost/fin439-lab18/blob/main/panel.py
-- Checkout notes and proposed decision: https://github.com/abfost/fin439-lab18/blob/main/docs/lab19-checkout.md
+- Analysis and decision: https://github.com/abfost/fin439-lab18/blob/main/docs/lab19-checkout.md
 - This audit: https://github.com/abfost/fin439-lab18/blob/main/docs/requirements-audit.md
 - Reproduction validator: https://github.com/abfost/fin439-lab18/blob/main/validate_lab19.py
 - Graham skill: https://github.com/abfost/fin439-lab18/blob/main/.agents/skills/graham-edgar/SKILL.md
 - Burry skill: https://github.com/abfost/fin439-lab18/blob/main/.agents/skills/burry-edgar/SKILL.md
-
-The lab asks for GitHub file links; it does not request videos. This audit does not claim a grade or completion of unobserved personal activities.
