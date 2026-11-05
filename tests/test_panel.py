@@ -27,3 +27,34 @@ class PanelTests(unittest.TestCase):
     def test_nvda_split(self):
         panel=json.loads(Path('data/NVDA_panel.json').read_text())
         self.assertEqual(list(panel['checks']['Burry'].values()),['fail','pass'])
+
+    def test_signed_and_grouped_decimal_number_flag(self):
+        self.assertEqual(unsupported_memo_numbers('Income -100', {'income':100}), ['-100'])
+        self.assertEqual(unsupported_memo_numbers('Income $1,234.56', {'income':1234.56}), [])
+        self.assertEqual(unsupported_memo_numbers('Income −100', {'income':-100}), [])
+        self.assertEqual(unsupported_memo_numbers('Income -$1,234.57', {'income':1234.56}), ['-$1,234.57'])
+
+    def test_unrounded_thresholds(self):
+        report=json.loads(Path('data/COST_report.json').read_text())
+        rows=copy.deepcopy(report['rows'])
+        rows[-1]['raw_values']['current_assets']=1999999
+        rows[-1]['raw_values']['current_liabilities']=1000000
+        self.assertEqual(next(iter(graham_checks(rows).values())), 'fail')
+        rows[-1]['raw_values']['liabilities_to_equity']=2.000001
+        self.assertEqual(list(burry_checks(rows).values())[-1], 'fail')
+
+    def test_each_missing_input(self):
+        report=json.loads(Path('data/COST_report.json').read_text())
+        for field in ('current_assets', 'current_liabilities'):
+            rows=copy.deepcopy(report['rows'])
+            rows[-1]['raw_values'][field]=None
+            self.assertEqual(next(iter(graham_checks(rows).values())), 'not known')
+        rows=copy.deepcopy(report['rows'])
+        rows[0]['raw_values']['net_income']=None
+        self.assertEqual(list(graham_checks(rows).values())[1:], ['not known','not known'])
+        rows[-1]['raw_values']['liabilities_to_equity']=None
+        self.assertEqual(list(burry_checks(rows).values())[-1], 'not known')
+
+    def test_source_rebuild(self):
+        from validate_lab19 import validate
+        self.assertTrue(validate()['NVDA']['raw_rebuild_matches_saved'])

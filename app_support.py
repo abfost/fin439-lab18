@@ -5,12 +5,14 @@ import re
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
-NUMBER_RE = re.compile(r"(?<![A-Za-z0-9])\$?(?:\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)(?:%)?")
+NUMBER_RE = re.compile(
+    r"(?<![A-Za-z0-9])(?:[-+−]?\$?|\$[-+−]?)(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?:%)?"
+)
 
 
 def canonical_number(token: str) -> Decimal | None:
     """Make 3,501, $3,501, and 3501 compare as the same printed number."""
-    cleaned = token.replace("$", "").replace(",", "").replace("%", "")
+    cleaned = token.replace("$", "").replace(",", "").replace("%", "").replace("−", "-")
     try:
         return Decimal(cleaned)
     except InvalidOperation:

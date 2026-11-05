@@ -1,0 +1,67 @@
+{
+  "COST": {
+    "counts": {
+      "Buffett": {
+        "passed": 3,
+        "failed": 0,
+        "not_known": 0,
+        "total": 3
+      },
+      "Graham": {
+        "passed": 2,
+        "failed": 1,
+        "not_known": 0,
+        "total": 3
+      },
+      "Burry": {
+        "passed": 2,
+        "failed": 0,
+        "not_known": 0,
+        "total": 2
+      }
+    },
+    "verdicts": {
+      "Buffett": "own the business",
+      "Graham": "watch it",
+      "Burry": "own the business"
+    },
+    "source_hash_verified": true,
+    "raw_rebuild_matches_saved": true,
+    "all_three_memo_flags_verified": true,
+    "threshold_probe": {
+      "retained": 2.0,
+      "probe": 1.0,
+      "probe_graham_passes": 3
+    }
+  },
+  "NVDA": {
+    "counts": {
+      "Buffett": {
+        "passed": 3,
+        "failed": 0,
+        "not_known": 0,
+        "total": 3
+      },
+      "Graham": {
+        "passed": 3,
+        "failed": 0,
+        "not_known": 0,
+        "total": 3
+      },
+      "Burry": {
+        "passed": 1,
+        "failed": 1,
+        "not_known": 0,
+        "total": 2
+      }
+    },
+    "verdicts": {
+      "Buffett": "own the business",
+      "Graham": "own the business",
+      "Burry": "watch it"
+    },
+    "source_hash_verified": true,
+    "raw_rebuild_matches_saved": true,
+    "all_three_memo_flags_verified": true
+  }
+}

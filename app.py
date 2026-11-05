@@ -16,7 +16,7 @@ from panel import build_panel
 ROOT = Path(__file__).parent
 SCRIPT = ROOT / ".agents" / "skills" / "buffett-edgar" / "buffett_edgar.py"
 
-st.set_page_config(page_title="FIN439 Lab 18", page_icon=":material/account_balance:", layout="wide")
+st.set_page_config(page_title="FIN439 Lab 19 — Legend Panel", page_icon=":material/account_balance:", layout="wide")
 st.title("Legend Panel — Buffett, Graham and Burry")
 st.caption("data from SEC EDGAR; built with AI help, a learning demonstration, not investment advice.")
 
@@ -47,6 +47,8 @@ def table_for(report: dict) -> pd.DataFrame:
         "capital_spending": "Capital spending",
         "equity": "Equity",
         "liabilities": "Liabilities",
+        "current_assets": "Current assets",
+        "current_liabilities": "Current liabilities",
         "roe": "ROE %",
         "liabilities_to_equity": "Liabilities / equity",
         "owner_earnings": "Owner earnings",
@@ -60,11 +62,11 @@ def table_for(report: dict) -> pd.DataFrame:
                 continue
             value = values.get(key)
             if value is None:
-                item[label] = "not known" if key in {"roe", "liabilities_to_equity"} else "not found"
+                item[label] = "not known" if key in {"roe", "liabilities_to_equity", "owner_earnings"} else "not found"
             elif key == "roe":
                 item[label] = f"{value:.1f}%"
             elif key == "liabilities_to_equity":
-                item[label] = f"{value:.1f}"
+                item[label] = f"{value:.2f}"
             else:
                 item[label] = f"{value:,}"
         display_rows.append(item)
@@ -180,13 +182,19 @@ st.header("Three-investor panel")
 threshold = st.select_slider("Graham current-ratio threshold", options=[1.0, 2.0], value=2.0)
 panel = build_panel(report, threshold)
 evidence = {k:v for k,v in panel.items() if k != "memos"}
-st.dataframe(pd.DataFrame(panel["facts"]), hide_index=True)
+display_facts = []
+for fact in panel["facts"]:
+    display_facts.append({key: ("not known" if key in {"roe", "owner_earnings", "current_ratio", "liabilities_to_equity"} else "not found")
+        if value is None else str(value) for key, value in fact.items()})
+st.caption("Amounts in USD millions; ROE in percent; current ratio and liabilities/equity are dimensionless. Missing facts are not found; missing calculations are not known.")
+st.dataframe(pd.DataFrame(display_facts), hide_index=True)
 st.table(pd.DataFrame([{"Investor": investor, "Check": label, "Result": status}
     for investor, checks in panel["checks"].items() for label,status in checks.items()]))
 for column, investor in zip(st.columns(3), panel["memos"]):
     with column:
         st.subheader(investor)
         st.write("Verdict: " + panel["verdicts"][investor])
+        st.write(f"{panel['counts'][investor]['passed']} of {panel['counts'][investor]['total']} checks pass")
         memo = st.text_area("Memo and number probe", value=panel["memos"][investor],
             height=420, key=f"panel_{report['ticker']}_{investor}_{threshold}")
         flags = unsupported_memo_numbers(memo, evidence)
@@ -194,5 +202,6 @@ for column, investor in zip(st.columns(3), panel["memos"]):
             st.warning("Unprinted numbers: " + ", ".join(flags))
         else:
             st.success("All memo numbers occur in printed evidence.")
+st.caption("The number flag checks whether a value was printed; it cannot prove a statement uses the right year, metric or units. Review those against the evidence too.")
 with st.expander("Printed evidence used by all memo number checks"):
     st.json(evidence)

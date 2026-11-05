@@ -33,3 +33,33 @@ class AppTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class PanelAppAuditTests(unittest.TestCase):
+    def test_each_panel_memo_flags_and_nvda_runs(self):
+        app = AppTest.from_file(Path(__file__).resolve().parents[1] / 'app.py').run(timeout=15)
+        for idx in (1,2,3):
+            original = app.text_area[idx].value
+            app.text_area[idx].set_value(original+' Invented 987654321.25').run(timeout=15)
+            self.assertFalse(app.exception)
+            self.assertTrue(any('987654321.25' in w.value for w in app.warning))
+            app.text_area[idx].set_value(original).run(timeout=15)
+            self.assertFalse(app.warning)
+        app.select_slider[0].set_value(1.0).run(timeout=15)
+        self.assertFalse(app.exception)
+        self.assertTrue(all(app.table[-1].value.query("Investor == 'Graham'")['Result'] == 'pass'))
+        app.sidebar.selectbox[0].select('NVDA').run(timeout=15)
+        self.assertFalse(app.exception)
+        self.assertEqual(len(app.text_area),4)
+        self.assertEqual(app.table[-1].value.query("Investor == 'Burry'")['Result'].tolist(), ['fail','pass'])
+
+    def test_missing_facts_are_explicit(self):
+        report=json.loads(Path('data/COST_report.json').read_text())
+        report['rows'][-1]['raw_values']['current_assets']=None
+        report['rows'][-1]['values']['current_assets']=None
+        app=AppTest.from_file(Path(__file__).resolve().parents[1] / 'app.py')
+        app.session_state['report']=report
+        app.session_state['saved_ticker']='COST'
+        app.run(timeout=15)
+        self.assertFalse(app.exception)
+        self.assertEqual(app.dataframe[-1].value.iloc[-1]['current_assets'],'not found')
+        self.assertEqual(app.dataframe[-1].value.iloc[-1]['current_ratio'],'not known')

@@ -1,0 +1,133 @@
+{
+  "ticker": "COST",
+  "company_name": "COSTCO WHOLESALE CORP /NEW",
+  "threshold": 1.0,
+  "facts": [
+    {
+      "FY end": "2022-08-28",
+      "revenue": 226954,
+      "net_income": 5844,
+      "operating_cash_flow": 7392,
+      "capital_spending": 3891,
+      "equity": 20642,
+      "liabilities": 43519,
+      "current_assets": 32696,
+      "current_liabilities": 31998,
+      "roe": 28.3,
+      "liabilities_to_equity": 2.11,
+      "owner_earnings": 3501,
+      "current_ratio": 1.02
+    },
+    {
+      "FY end": "2023-09-03",
+      "revenue": 242290,
+      "net_income": 6292,
+      "operating_cash_flow": 11068,
+      "capital_spending": 4323,
+      "equity": 25058,
+      "liabilities": 43936,
+      "current_assets": 35879,
+      "current_liabilities": 33583,
+      "roe": 25.1,
+      "liabilities_to_equity": 1.75,
+      "owner_earnings": 6745,
+      "current_ratio": 1.07
+    },
+    {
+      "FY end": "2024-09-01",
+      "revenue": 254453,
+      "net_income": 7367,
+      "operating_cash_flow": 11339,
+      "capital_spending": 4710,
+      "equity": 23622,
+      "liabilities": 46209,
+      "current_assets": 34246,
+      "current_liabilities": 35464,
+      "roe": 31.2,
+      "liabilities_to_equity": 1.96,
+      "owner_earnings": 6629,
+      "current_ratio": 0.97
+    },
+    {
+      "FY end": "2025-08-31",
+      "revenue": 275235,
+      "net_income": 8099,
+      "operating_cash_flow": 13335,
+      "capital_spending": 5498,
+      "equity": 29164,
+      "liabilities": 47935,
+      "current_assets": 38380,
+      "current_liabilities": 37108,
+      "roe": 27.8,
+      "liabilities_to_equity": 1.64,
+      "owner_earnings": 7837,
+      "current_ratio": 1.03
+    },
+    {
+      "FY end": "2026-08-30",
+      "revenue": 303154,
+      "net_income": 9226,
+      "operating_cash_flow": 15817,
+      "capital_spending": 6435,
+      "equity": 35803,
+      "liabilities": 53242,
+      "current_assets": 46582,
+      "current_liabilities": 43952,
+      "roe": 25.8,
+      "liabilities_to_equity": 1.49,
+      "owner_earnings": 9382,
+      "current_ratio": 1.06
+    }
+  ],
+  "checks": {
+    "Buffett": {
+      "ROE of 15% or more every year": "pass",
+      "Owner earnings positive every year": "pass",
+      "Owner earnings grew, first year to last": "pass"
+    },
+    "Graham": {
+      "Current ratio at least 1.0, latest year": "pass",
+      "Net income positive every year": "pass",
+      "Net income grew, first year to last": "pass"
+    },
+    "Burry": {
+      "Operating cash flow at least net income every year": "pass",
+      "Liabilities no more than twice equity, latest year": "pass"
+    }
+  },
+  "verdicts": {
+    "Buffett": "own the business",
+    "Graham": "own the business",
+    "Burry": "own the business"
+  },
+  "counts": {
+    "Buffett": {
+      "passed": 3,
+      "failed": 0,
+      "not_known": 0,
+      "total": 3
+    },
+    "Graham": {
+      "passed": 3,
+      "failed": 0,
+      "not_known": 0,
+      "total": 3
+    },
+    "Burry": {
+      "passed": 2,
+      "failed": 0,
+      "not_known": 0,
+      "total": 2
+    }
+  },
+  "memos": {
+    "Buffett": "COST \u2014 Buffett: own the business.\n\nROE of 15% or more every year: pass.\n\nOwner earnings positive every year: pass.\n\nOwner earnings grew, first year to last: pass.\n\nFY end 2022-08-28: ROE 28.3%; owner earnings 3,501 USD millions.\n\nFY end 2023-09-03: ROE 25.1%; owner earnings 6,745 USD millions.\n\nFY end 2024-09-01: ROE 31.2%; owner earnings 6,629 USD millions.\n\nFY end 2025-08-31: ROE 27.8%; owner earnings 7,837 USD millions.\n\nFY end 2026-08-30: ROE 25.8%; owner earnings 9,382 USD millions.\n\nFocus: profitability and cash remaining after capital spending.\n\nBusiness judgment only: this simplified screen does not establish a fair purchase price or justify an allocation. Any failed check means watch it; an incomplete screen without a failure remains not known. A positive business judgment still requires further research. Missing inputs remain not known.",
+    "Graham": "COST \u2014 Graham: own the business.\n\nCurrent ratio at least 1.0, latest year: pass.\n\nNet income positive every year: pass.\n\nNet income grew, first year to last: pass.\n\nLatest current ratio: 1.06.\n\nFY end 2022-08-28: net income 5,844 USD millions.\n\nFY end 2023-09-03: net income 6,292 USD millions.\n\nFY end 2024-09-01: net income 7,367 USD millions.\n\nFY end 2025-08-31: net income 8,099 USD millions.\n\nFY end 2026-08-30: net income 9,226 USD millions.\n\nThreshold retained: 1.0; relaxed liquidity screen; interpret separately from the required validation.\n\nFocus: liquidity and earnings stability.\n\nBusiness judgment only: this simplified screen does not establish a fair purchase price or justify an allocation. Any failed check means watch it; an incomplete screen without a failure remains not known. A positive business judgment still requires further research. Missing inputs remain not known.",
+    "Burry": "COST \u2014 Burry: own the business.\n\nOperating cash flow at least net income every year: pass.\n\nLiabilities no more than twice equity, latest year: pass.\n\nLatest liabilities / equity: 1.49.\n\nFY end 2022-08-28: operating cash flow 7,392; net income 5,844 USD millions.\n\nFY end 2023-09-03: operating cash flow 11,068; net income 6,292 USD millions.\n\nFY end 2024-09-01: operating cash flow 11,339; net income 7,367 USD millions.\n\nFY end 2025-08-31: operating cash flow 13,335; net income 8,099 USD millions.\n\nFY end 2026-08-30: operating cash flow 15,817; net income 9,226 USD millions.\n\nFocus: cash backing earnings and balance-sheet obligations.\n\nBusiness judgment only: this simplified screen does not establish a fair purchase price or justify an allocation. Any failed check means watch it; an incomplete screen without a failure remains not known. A positive business judgment still requires further research. Missing inputs remain not known."
+  },
+  "number_flags": {
+    "Buffett": [],
+    "Graham": [],
+    "Burry": []
+  }
+}

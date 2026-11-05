@@ -96,14 +96,34 @@
     }
   },
   "verdicts": {
-    "Buffett": "passes screen",
+    "Buffett": "own the business",
     "Graham": "watch it",
-    "Burry": "passes screen"
+    "Burry": "own the business"
+  },
+  "counts": {
+    "Buffett": {
+      "passed": 3,
+      "failed": 0,
+      "not_known": 0,
+      "total": 3
+    },
+    "Graham": {
+      "passed": 2,
+      "failed": 1,
+      "not_known": 0,
+      "total": 3
+    },
+    "Burry": {
+      "passed": 2,
+      "failed": 0,
+      "not_known": 0,
+      "total": 2
+    }
   },
   "memos": {
-    "Buffett": "COST \u2014 Buffett: passes screen.\n\nROE of 15% or more every year: pass.\n\nOwner earnings positive every year: pass.\n\nOwner earnings grew, first year to last: pass.\n\nFocus: profitability and cash remaining after capital spending.\n\nThis simplified business screen does not establish a fair purchase price or justify an allocation. Missing inputs remain not known.",
-    "Graham": "COST \u2014 Graham: watch it.\n\nCurrent ratio at least 2.0, latest year: fail.\n\nNet income positive every year: pass.\n\nNet income grew, first year to last: pass.\n\nLatest current ratio: 1.06.\n\nThreshold retained: 2.0; keep the assignment\u2019s conservative liquidity requirement.\n\nFocus: liquidity and earnings stability.\n\nThis simplified business screen does not establish a fair purchase price or justify an allocation. Missing inputs remain not known.",
-    "Burry": "COST \u2014 Burry: passes screen.\n\nOperating cash flow at least net income every year: pass.\n\nLiabilities no more than twice equity, latest year: pass.\n\nLatest liabilities / equity: 1.49.\n\nFocus: cash backing earnings and balance-sheet obligations.\n\nThis simplified business screen does not establish a fair purchase price or justify an allocation. Missing inputs remain not known."
+    "Buffett": "COST \u2014 Buffett: own the business.\n\nROE of 15% or more every year: pass.\n\nOwner earnings positive every year: pass.\n\nOwner earnings grew, first year to last: pass.\n\nFY end 2022-08-28: ROE 28.3%; owner earnings 3,501 USD millions.\n\nFY end 2023-09-03: ROE 25.1%; owner earnings 6,745 USD millions.\n\nFY end 2024-09-01: ROE 31.2%; owner earnings 6,629 USD millions.\n\nFY end 2025-08-31: ROE 27.8%; owner earnings 7,837 USD millions.\n\nFY end 2026-08-30: ROE 25.8%; owner earnings 9,382 USD millions.\n\nFocus: profitability and cash remaining after capital spending.\n\nBusiness judgment only: this simplified screen does not establish a fair purchase price or justify an allocation. Any failed check means watch it; an incomplete screen without a failure remains not known. A positive business judgment still requires further research. Missing inputs remain not known.",
+    "Graham": "COST \u2014 Graham: watch it.\n\nCurrent ratio at least 2.0, latest year: fail.\n\nNet income positive every year: pass.\n\nNet income grew, first year to last: pass.\n\nLatest current ratio: 1.06.\n\nFY end 2022-08-28: net income 5,844 USD millions.\n\nFY end 2023-09-03: net income 6,292 USD millions.\n\nFY end 2024-09-01: net income 7,367 USD millions.\n\nFY end 2025-08-31: net income 8,099 USD millions.\n\nFY end 2026-08-30: net income 9,226 USD millions.\n\nThreshold retained: 2.0; keep the assignment\u2019s conservative liquidity requirement.\n\nFocus: liquidity and earnings stability.\n\nBusiness judgment only: this simplified screen does not establish a fair purchase price or justify an allocation. Any failed check means watch it; an incomplete screen without a failure remains not known. A positive business judgment still requires further research. Missing inputs remain not known.",
+    "Burry": "COST \u2014 Burry: own the business.\n\nOperating cash flow at least net income every year: pass.\n\nLiabilities no more than twice equity, latest year: pass.\n\nLatest liabilities / equity: 1.49.\n\nFY end 2022-08-28: operating cash flow 7,392; net income 5,844 USD millions.\n\nFY end 2023-09-03: operating cash flow 11,068; net income 6,292 USD millions.\n\nFY end 2024-09-01: operating cash flow 11,339; net income 7,367 USD millions.\n\nFY end 2025-08-31: operating cash flow 13,335; net income 8,099 USD millions.\n\nFY end 2026-08-30: operating cash flow 15,817; net income 9,226 USD millions.\n\nFocus: cash backing earnings and balance-sheet obligations.\n\nBusiness judgment only: this simplified screen does not establish a fair purchase price or justify an allocation. Any failed check means watch it; an incomplete screen without a failure remains not known. A positive business judgment still requires further research. Missing inputs remain not known."
   },
   "number_flags": {
     "Buffett": [],

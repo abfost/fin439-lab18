@@ -17,8 +17,7 @@
         "current_liabilities": 4335,
         "roe": 36.6,
         "liabilities_to_equity": 0.66,
-        "owner_earnings": 8132,
-        "current_ratio": 6.65
+        "owner_earnings": 8132
       },
       "tags": {
         "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -60,8 +59,7 @@
         "current_liabilities": 6563,
         "roe": 19.8,
         "liabilities_to_equity": 0.86,
-        "owner_earnings": 3808,
-        "current_ratio": 3.52
+        "owner_earnings": 3808
       },
       "tags": {
         "revenue": "Revenues",
@@ -103,8 +101,7 @@
         "current_liabilities": 10631,
         "roe": 69.2,
         "liabilities_to_equity": 0.53,
-        "owner_earnings": 27021,
-        "current_ratio": 4.17
+        "owner_earnings": 27021
       },
       "tags": {
         "revenue": "Revenues",
@@ -146,8 +143,7 @@
         "current_liabilities": 18047,
         "roe": 91.9,
         "liabilities_to_equity": 0.41,
-        "owner_earnings": 60853,
-        "current_ratio": 4.44
+        "owner_earnings": 60853
       },
       "tags": {
         "revenue": "Revenues",
@@ -189,8 +185,7 @@
         "current_liabilities": 32163,
         "roe": 76.3,
         "liabilities_to_equity": 0.31,
-        "owner_earnings": 96676,
-        "current_ratio": 3.91
+        "owner_earnings": 96676
       },
       "tags": {
         "revenue": "Revenues",

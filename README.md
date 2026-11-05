@@ -1,8 +1,7 @@
-# FIN439 Lab 18
+# FIN439 Labs 18–19 — Legend Panel
 
 This project turns the five-year Buffett checks into repeatable code. It uses
-only SEC EDGAR company facts from annual 10-K filings; it does not use FAskills
-or paid financial data.
+only SEC EDGAR company facts from annual 10-K filings for financial data. Lab 19 adapts the Graham and Burry frameworks from FAskills; no paid financial data is used.
 
 ## Run it in PowerShell
 
@@ -29,7 +28,7 @@ only when you request fresh SEC data; it does not save it.
   values. The app's editable number probe flags a value, such as `40.0%`, that
   was not printed by the script.
 
-Your personal trust decision and reflection are intentionally not filled in.
+The Lab 19 checkout notes include a proposed conditional decision for you to review; partner activities must actually be completed.
 
 
 ## Lab 19 — Legend Panel
@@ -53,3 +52,13 @@ and saves reproducible reports and memos. The two added project skills are under
 FAskills source. These simplified screens do not claim to reproduce the full
 investors' strategies. See `docs/lab19-checkout.md` for results, discussion drafts,
 the proposed conditional decision and activities to complete yourself.
+
+## Offline reproduction and audit
+
+```sh
+python panel.py COST --facts data/raw/COST_companyfacts.json
+python panel.py NVDA --facts data/raw/NVDA_companyfacts.json
+python validate_lab19.py
+```
+
+The saved raw responses and SHA-256 hashes in `data/provenance.json` let a grader reproduce the reports without a network request. See `docs/requirements-audit.md` for the requirement-by-requirement evidence and remaining individual activities. The numeric flag checks value membership, including signs and decimals, not whether the prose assigns the correct unit, year or metric.

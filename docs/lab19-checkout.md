@@ -36,3 +36,9 @@ These are three persona-inspired skills implemented as deterministic screens, no
 - Review the proposed decision and submit your individual GitHub links.
 
 These notes do not claim those partner activities have happened.
+
+## Reflection preparation
+The panel agrees on NVIDIA's positive income, growing owner earnings and acceptable latest leverage. It splits on earnings quality: Burry's cash-conversion rule fails even while Buffett and Graham pass their screens. Changing the COST liquidity cutoff changes Graham's verdict without changing Costco's facts; a verdict depends on the chosen rules, so retain and disclose the cutoff rather than treating a pass as objective proof of suitability.
+
+## Audit evidence
+See `docs/requirements-audit.md` and `data/lab19_validation.json`. Fourteen tests pass, including reproduction from saved raw SEC data, every COST reference ratio, threshold sensitivity, missing data and a separate flag probe in each investor's app memo. The actual skill-setting probe is saved in `data/COST_threshold_probe.json`; the retained threshold is restored to 2.0.

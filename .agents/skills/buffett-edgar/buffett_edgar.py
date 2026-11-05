@@ -362,7 +362,7 @@ def fetch_report(ticker: str, email: str) -> dict[str, Any]:
         "ticker": ticker,
         "company_name": company_name,
         "cik": f"{cik:010d}",
-        "units": "USD millions except ROE percent",
+        "units": "USD millions; ROE percent; liabilities/equity dimensionless",
         "rows": rows,
         "checks": checks_for(rows),
     }
@@ -382,7 +382,7 @@ def display_value(
         return f"{value:.1f}%"
 
     if key == "liabilities_to_equity":
-        return f"{value:.1f}"
+        return f"{value:.2f}"
 
     return f"{value:,.6f}".rstrip("0").rstrip(".")
 
